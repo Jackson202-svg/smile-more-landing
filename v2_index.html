@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Smile More — Bunker Branding (Demo)</title>
+  <meta name="description" content="Smile More — promotional landing page demo built with HTML, CSS and JS." />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="logo" href="#">Bunker<span>Branding</span></a>
+
+    <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </nav>
+
+    <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="mainNav">
+      <span class="hamburger"></span>
+      <span class="sr-only">Open menu</span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <div class="hero-text">
+        <h1>Smile More</h1>
+        <p class="lead">A small collection of cheerful apparel and accessories to brighten your day — designed to make people smile.</p>
+        <div class="hero-cta">
+          <a href="#products" class="btn btn-primary">Shop the Collection</a>
+          <a href="#about" class="btn btn-ghost">Learn More</a>
+        </div>
+      </div>
+      <div class="hero-image" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1533228100845-0b4f3a5a2d4b?q=80&w=1200&auto=format&fit=crop&ixlib=rb-1.2.1&s=placeholder" alt="">
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section about">
+    <div class="wrap">
+      <h2 class="section-title">Happy designs, responsibly made</h2>
+      <p class="section-lead">Everything in the Smile More line is printed on sustainably-sourced materials and packaged with care. We design for good vibes and low impact.</p>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section id="products" class="section products">
+    <div class="wrap">
+      <h2 class="section-title">Featured Products</h2>
+
+      <div class="product-grid">
+        <article class="product-card">
+          <img src="https://images.unsplash.com/photo-1520975918488-17bb7d3c06d7?q=80&w=800&auto=format&fit=crop&ixlib=rb-1.2.1&s=placeholder" alt="Smile Tee">
+          <div class="product-body">
+            <h3>Smile Tee</h3>
+            <p class="price">$28</p>
+            <p class="muted">Soft cotton tee printed with the classic Smile More logo.</p>
+            <div class="product-actions">
+              <button class="btn btn-outline add-cart" data-name="Smile Tee" data-price="28">Add to cart</button>
+              <a class="btn btn-link" href="#">View</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <img src="https://images.unsplash.com/photo-1503342452485-86a1a1628556?q=80&w=800&auto=format&fit=crop&ixlib=rb-1.2.1&s=placeholder" alt="Happy Hoodie">
+          <div class="product-body">
+            <h3>Happy Hoodie</h3>
+            <p class="price">$52</p>
+            <p class="muted">Cozy hoodie with a bold smile patch on the chest.</p>
+            <div class="product-actions">
+              <button class="btn btn-outline add-cart" data-name="Happy Hoodie" data-price="52">Add to cart</button>
+              <a class="btn btn-link" href="#">View</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <img src="https://images.unsplash.com/photo-1520975685764-2bcd7f4a9d82?q=80&w=800&auto=format&fit=crop&ixlib=rb-1.2.1&s=placeholder" alt="Sticker Pack">
+          <div class="product-body">
+            <h3>Sticker Pack</h3>
+            <p class="price">$8</p>
+            <p class="muted">A set of colorful smiley stickers — perfect for laptops and notebooks.</p>
+            <div class="product-actions">
+              <button class="btn btn-outline add-cart" data-name="Sticker Pack" data-price="8">Add to cart</button>
+              <a class="btn btn-link" href="#">View</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="section testimonials">
+    <div class="wrap">
+      <h2 class="section-title">What people are saying</h2>
+      <div class="carousel" aria-roledescription="carousel">
+        <button class="carousel-btn prev" aria-label="Previous testimonial">&larr;</button>
+        <div class="carousel-track" data-index="0">
+          <blockquote class="testimonial">
+            <p>“I get compliments every time I wear the Smile Tee — it genuinely brightens my day.”</p>
+            <footer>— Alex R.</footer>
+          </blockquote>
+
+          <blockquote class="testimonial">
+            <p>“Fast shipping, great quality, and the packaging was so thoughtful!”</p>
+            <footer>— Marina K.</footer>
+          </blockquote>
+
+          <blockquote class="testimonial">
+            <p>“The hoodie is the softest thing I own. 10/10 recommend.”</p>
+            <footer>— Jamal D.</footer>
+          </blockquote>
+        </div>
+        <button class="carousel-btn next" aria-label="Next testimonial">&rarr;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section faq">
+    <div class="wrap">
+      <h2 class="section-title">FAQ</h2>
+      <details>
+        <summary>What is your return policy?</summary>
+        <p>We accept returns within 30 days in original condition. Shipping costs may apply.</p>
+      </details>
+      <details>
+        <summary>Do you ship internationally?</summary>
+        <p>Yes — transit times vary. Duties and taxes may apply depending on the destination.</p>
+      </details>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <p>© <span id="year"></span> Bunker Branding · Smile More</p>
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="#privacy">Privacy</a>
+      <a href="#terms">Terms</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
